@@ -1,17 +1,3 @@
-# Table of Contents
-- [Introduction](#introduction)
-    - [Version](#version)
-- [Contributing](#contributing)
-- [Reporting Issues](#reporting-issues)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Shell Access](#shell-access)
-- [Upgrading](#upgrading)
-- Links
-  - [Announcements](https://github.com/comunes/docker-kune/issues/1)
-  - [Issues](https://github.com/comunes/docker-kune/issues)
-- [References](#references)
-- [Credits](#credits)
 
 # Introduction
 
