@@ -9,9 +9,9 @@ ENV ROOT_PWD changeme
 
 # In development, uncomment to use squid-deb-proxy and a specific mirror
 # More info: http://nknu.net/running-docker-behind-a-proxy-on-ubuntu-14-04/
-#ENV http_proxy http://192.168.1.100:8000
-#ENV https_proxy http://192.168.1.100:8000
-#RUN perl -p -i -e 's/httpredir/ftp.fi/g' /etc/apt/sources.list
+# ENV http_proxy http://192.168.1.100:8000
+# ENV https_proxy http://192.168.1.100:8000
+# RUN perl -p -i -e 's/httpredir/ftp.fi/g' /etc/apt/sources.list
 
 # Install initial dependencies
 RUN apt-get -y update
