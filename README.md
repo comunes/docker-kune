@@ -63,6 +63,7 @@ NOTE: If you want another passwords different that the default ones, change thes
 ENV DB_ROOT_PWD db4kune
 ENV ROOT_PWD changeme
 ```
+also you can set `KUNE_DOMAIN` and `KUNE_PORT`.
 
 # Quick Start
 
@@ -74,7 +75,7 @@ docker run --name=kune -i -t --rm -p 22001:22 -p 8888:8888 -p 9091:9091 \
 	  -p 7070:7070 -p 7443:7443 -p 5229:5229 -p 5269:5269 \
 	comunes/kune:0.0.1-1
 ```
-Point your browser to `http://localhost:8888`.
+Point your browser to `http://localhost:8888` or whatever domain you have configured in `KUNE_DOMAIN` env variable.
 
 # Other steps
 
