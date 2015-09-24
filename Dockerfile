@@ -84,7 +84,7 @@ RUN echo "kune kune/mysql/admin-pass password $DB_ROOT_PWD" | debconf-set-select
 RUN mkdir -p /var/log/kune && \
     /usr/sbin/mysqld & \
     sleep 5s && \
-    apt-get install -y kune
+    apt-get install -y kune kune-cli
 EXPOSE $KUNE_PORT
 # FIXME: Is necessary to expose this port? (http-proxy for kune client chat)
 EXPOSE 5280
