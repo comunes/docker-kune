@@ -116,7 +116,7 @@ For more information refer https://github.com/jpetazzo/nsenter
 Also you can access via ssh:
 
 ```bash
-ssh -p 220001 root@localhost
+ssh -p 22001 root@localhost
 ```
 
 # Upgrading
