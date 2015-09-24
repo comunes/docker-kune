@@ -54,7 +54,8 @@ RUN echo "mysql-server mysql-server/root_password password $DB_ROOT_PWD" | debco
 
 # Install kune dependencies
 RUN apt-get install -y -q mysql-client postfix telnet libjmagick6-jni mysql-server adduser dbconfig-common && \
-    perl -p -i -e 's/key_buffer/key_buffer_size/g' /etc/mysql/my.cnf
+    perl -p -i -e 's/key_buffer/key_buffer_size/g' /etc/mysql/my.cnf && \
+    perl -p -i -e 's/\#max_connections        = 100/max_connections        = 300/g' /etc/mysql/my.cnf
 RUN /usr/sbin/mysqld & \
     sleep 5s && \
     echo "GRANT ALL ON *.* TO root@'%' IDENTIFIED BY '$DB_ROOT_PWD'; FLUSH PRIVILEGES" | mysql --user=root --password=$DB_ROOT_PWD
