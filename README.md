@@ -79,7 +79,7 @@ Point your browser to `http://localhost:8888` or whatever domain you have config
 
 # Other steps
 
-Configure openfire correctly (if you want to use the chat, or the wave federation). For that, point your browser to `http://localhost:9090` and follow the setup procedure to complete the openfire basic installation and also follow our [INSTALL openfire-kune integration appendix](https://github.com/comunes/kune/blob/master/INSTALL).
+Configure openfire correctly (if you want to use the chat, or the wave federation). For that, point your browser to `http://localhost:9090` and follow the setup procedure to complete the openfire basic installation and also follow our [INSTALL openfire-kune integration appendix](https://github.com/comunes/kune/blob/master/INSTALL.md).
 
 Also you need to configure the email system (postfix) if you want email notifications.
 
@@ -144,7 +144,7 @@ docker run -name kune -d [OPTIONS] comunes/kune:latest
 # References
 
   * The [kune debian package](http://kune.cc/?locale=es#!kune.docs.6810.898) page.
-  * The kune [INSTALL](https://github.com/comunes/kune/blob/master/INSTALL) documentation.
+  * The kune [INSTALL](https://github.com/comunes/kune/blob/master/INSTALL.md) documentation.
   * http://www.igniterealtime.org/projects/openfire/
 
 # Credits
