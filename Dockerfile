@@ -74,7 +74,7 @@ RUN echo "export VISIBLE=now" >> /etc/profile
 EXPOSE 22
 
 # We update again if we are testing only the last part with new kune packages
-RUN apt-get -y update # 20160503
+RUN apt-get -y update # 20160617
 
 # kune selections
 RUN echo "kune kune/mysql/admin-pass password $DB_ROOT_PWD" | debconf-set-selections && \

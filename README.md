@@ -41,7 +41,7 @@ docker pull comunes/kune:latest
 You can also pull a particular version of kune by specifying the version. For example,
 
 ```bash
-docker pull comunes/kune:0.0.1-1
+docker pull comunes/kune:latest
 ```
 
 Alternately you can build the image yourself.
@@ -73,7 +73,7 @@ Run the kune image:
 docker run --name=kune -i -t --rm -p 22001:22 -p 8888:8888 -p 9091:9091 \
 	  -p 9090:9090 -p 5222:5222 -p 5223:5223 -p 7777:7777 \
 	  -p 7070:7070 -p 7443:7443 -p 5229:5229 -p 5269:5269 \
-	comunes/kune:0.0.1-1
+	comunes/kune:latest
 ```
 Point your browser to `http://localhost:8888` or whatever domain you have configured in `KUNE_DOMAIN` env variable.
 
