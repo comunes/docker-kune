@@ -73,13 +73,13 @@ ENV NOTVISIBLE "in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile
 EXPOSE 22
 
-# We update again if we are testing only the last part with new kune packages
-RUN apt-get -y update # 20160617
-
 # kune selections
 RUN echo "kune kune/mysql/admin-pass password $DB_ROOT_PWD" | debconf-set-selections && \
     echo "kune kune/dbconfig-install boolean true" | debconf-set-selections && \
     echo "kune kune/dbconfig-upgrade boolean true" | debconf-set-selections
+
+# We update again if we are testing only the last part with new kune packages
+RUN apt-get -y update # 20160629
 
 # Kune needs mysql running to install correctly
 RUN mkdir -p /var/log/kune && \
